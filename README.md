@@ -40,7 +40,7 @@ Mobile Automation (Android)
    - Aktifkan **Mode Pengembang** dan **Debugging USB** pada *Real Device* 
      - Untuk Versi Android >= 11, bisa juga menggunakan *WiFi Debugging* dan *Pair device with QR code* di *android studio*
    - Instal [Vysor](https://www.vysor.io) (Aplikasi untuk melakukan *mirroring* layar *smartphone* di PC)
-   - Unduh **APK Info** di *smartphone* untuk mengetahui `appPackage` dan `appActivity`
+   - Unduh [APK Info](https://apkcombo.com/apk-info/com.wt.apkinfo/download/apk) di *smartphone* untuk mengetahui `appPackage` dan `appActivity`
    - Jalankan *Appium Server* dan *Appium Inspector*. 
      - Pada *Appium Inspector*: sesuaikan kode **JSON Representation/Capability Builder** berikut:<br>
      `{
@@ -57,4 +57,20 @@ Mobile Automation (Android)
 ---
 1. Lakukan **Pre-Requisite** nomor 1-2, seperti *repository* [swagLabs-RobotFramework](https://github.com/mrisqiamiruladieb/swagLabs-RobotFramework?tab=readme-ov-file#pre-requisite)
 2. Instal [Appium Library](https://docs.robotframework.org/docs/different_libraries/appium)
-   
+3. Buat **Struktur Folder** berikut: **POM (*Page Object Modelling*)** 
+   - **Apk**: Untuk menyimpan *file* aplikasi .apk
+   - **Resources**: Untuk menyimpan *file locator, test data, keywords*, dan *resources* lainnya
+   - **Step**: Untuk menyimpan *test files*
+4. Jalankan server Appium di *command line*: `appium`
+5. *Run*, seperti **Problem and Solving** nomor 3 pada *repository* [swagLabs-RobotFramework](https://github.com/mrisqiamiruladieb/swagLabs-RobotFramework/tree/main?tab=readme-ov-file#problem-and-solving)
+
+## Masalah & Solusi
+---
+1. *Failed no module named AppiumLibrary*
+   - Solusi: Pastikan *Appium Library: Robot Framework* terinstal pada *environment python* yang sedang digunakan. 
+   - Jika memiliki instalasi *python* > 1 versi maka pada **footer vs code** bagian kanan, dapat memilih *interpreter python* tempat terinstalnya *Appium Library*.
+2. *Module not found error: no moduled named 'appium.webdriver.common.touch_action'*
+   - Solusi: Instal [Appium-Python-Client 3.2.1 (*Downgrade*)](https://forum.robotframework.org/t/unable-to-import-robotframework-appiumlibrary-even-after-successful-installation-in-pycharm/6990/6)
+3. Hasil *screenshot* dari perintah `Capture Page Screenshot` tersimpan di [log.html](https://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html#Capture%20Page%20Screenshot)
+4. Perintah untuk menutup aplikasi, setelah menyelesaikan *test cases*
+   - Solusi: Tambahkan `shouldTerminateApp=true` di **capability** ([Read me](https://github.com/appium/appium-flutter-driver/issues/491))
