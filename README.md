@@ -1,6 +1,11 @@
 # MobileAutomation-RobotFramework
 Mobile Automation (Android)
 
+## Branch Information
+---
+- **main:** utama
+- **TDD:** Test Driven Development
+
 ## Bahan Uji
 ---
 1. [Source APK Demo](https://bit.ly/Myskill-apk-demo)
