@@ -18,7 +18,7 @@ Mobile Automation (Android)
 2. Buat *File Sumber Data* berikut: Resources/**userDiet.csv**
 3. Konfigurasi *Settings (Library, Test Template), Keywords, Test Cases* pada *file* Step/**appDietStep.robot**
 4. Jalankan server Appium di command line: `appium`
-5. *Run file* Step/**appDietStep.robot**, seperti *Problem* and *Solving* nomor 3 pada *repository* [swagLabs-RobotFramework](https://github.com/mrisqiamiruladieb/swagLabs-RobotFramework/tree/main?tab=readme-ov-file#problem-and-solving) serta pantau *emulator* di *android studio* (*Stand By*)
+5. *Run file* Step/**appDietStep.robot**, seperti *Problem* and *Solving* nomor 3 pada *repository* [swagLabs-RobotFramework](https://github.com/mrisqiamiruladieb/swagLabs-RobotFramework/tree/main?tab=readme-ov-file#problem-and-solving) serta pantau *emulator* di *android studio* atau tampilan di *real device* (*Stand By*)
    
 ## Masalah & Solusi
 ---
