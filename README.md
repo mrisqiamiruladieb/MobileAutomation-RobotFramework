@@ -15,6 +15,7 @@ Mobile Automation (Android)
 ---
 1. Instal [Node.js bersama npm](https://nodejs.org/en/download), Java Development Kit (JDK), [Android SDK: Android Studio](https://developer.android.com/studio) 
 2. Konfigurasi Android Studio (Pengujian Aplikasi Android dengan Emulator)
+   - Pada _File_ &rarr; **Project Structure**, pastikan sudah terdapat _Android SDK berhubungan dengan Java_ dan sebagainya.
    - Buat Virtual Device pada Device Manager
      - Pilih jenis, versi android, dan sebagainya
      - Klik tombol *Play* untuk jalankan emulator
@@ -23,7 +24,7 @@ Mobile Automation (Android)
    - Buka File Aplikasi (Git Version): *Clone Repository*
    - Instal Aplikasi Uji
      - Pastikan pada *header*, terdapat **nama_app(logo_android)** dan **virtual_device**. Lalu, klik tombol *Play* untuk *run*.
-3. Instal dan Konfigurasi Appium
+4. Instal dan Konfigurasi Appium
    - Instal [Appium](https://appium.io/docs/en/latest/quickstart/install/) beserta [Drivernya](https://appium.io/docs/en/latest/quickstart/uiauto2-driver/) di *command line*
    - Instal [Appium Inspector](https://github.com/appium/appium-inspector/releases)
    - Jalankan server Appium di *command line*: `appium`
@@ -41,7 +42,7 @@ Mobile Automation (Android)
          - *deviceName* : Android Studio &rarr; Buka *Emulator* &rarr; Pergi ke *Settings* &rarr; Pilih **About emulated device**
          - *automationName* : **Appium Driver**
      - Selanjutnya, *Start Session*
-4. Pengujian Aplikasi Android menggunakan *Real Device*
+5. Pengujian Aplikasi Android menggunakan *Real Device*
    - Aktifkan **Mode Pengembang** dan **Debugging USB** pada *Real Device* 
      - Untuk Versi Android >= 11, bisa juga menggunakan *WiFi Debugging* dan *Pair device with QR code* di *android studio*
    - Instal [Vysor](https://www.vysor.io) (Aplikasi untuk melakukan *mirroring* layar *smartphone* di PC)
@@ -79,3 +80,8 @@ Mobile Automation (Android)
 3. Hasil *screenshot* dari perintah `Capture Page Screenshot` tersimpan di [log.html](https://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html#Capture%20Page%20Screenshot)
 4. Perintah untuk menutup aplikasi, setelah menyelesaikan *test cases*
    - Solusi: Tambahkan `shouldTerminateApp=true` di **capability** ([Read me](https://github.com/appium/appium-flutter-driver/issues/491))
+5. Gagal mirroring dengan _vysor_
+   - Solusi: Pada __hp__ &rarr; _USB settings_, pilih **Transferring images** ([Referensi](https://stackoverflow.com/questions/56251888/my-device-doesnt-show-the-allow-usb-debugging-dialog))
+6. Gagal _Start Session_ di **Appium Inspector**
+   - Pesan Gagal: Failed to create session. An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\ACER\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s RRCWB010MLA shell cmd package list packages' exited with code 255'; Command output: Exception occurred while executing 'list': java.lang.SecurityException: Shell does not have permission to access user 150 com.android.server.am.ActivityManagerService.handleIncomingUser:15970 android.app.ActivityManager.handleIncomingUser:5152 com.android.server.pm.PackageManagerShellCommand.translateUserId:3733 at com.android.server.am.UserController.handleIncomingUser(UserController.java:2892) at com.android.server.am.ActivityManagerService.handleIncomingUser(ActivityManagerService.java:15970) at android.app.ActivityManager.handleIncomingUser(ActivityManager.java:5152) at com.android.server.pm.PackageManagerShellCommand.translateUserId(PackageManagerShellCommand.java:3733) at com.android.server.pm.PackageManagerShellCommand.runListPackages(PackageManagerShellCommand.java:1074) at com.android.server.pm.PackageManagerShellCommand.runListPackages(PackageManagerSh..bla..bla..
+   - Solusi: Pada _hp_ &rarr; **Uninstall** Secure Folder app ([Referensi](https://android.stackexchange.com/questions/243104/getting-java-lang-securityexception-shell-does-not-have-permission-to-access-u))
