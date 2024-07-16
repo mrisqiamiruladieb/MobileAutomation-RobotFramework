@@ -46,7 +46,7 @@ Mobile Automation (Android)
    - Aktifkan **Mode Pengembang** dan **Debugging USB** pada *Real Device* 
      - Untuk Versi Android >= 11, bisa juga menggunakan *WiFi Debugging* dan *Pair device with QR code* di *android studio*
    - Instal [Vysor](https://www.vysor.io) (Aplikasi untuk melakukan *mirroring* layar *smartphone* di PC)
-   - Unduh [APK Info](https://apkcombo.com/apk-info/com.wt.apkinfo/download/apk) di *smartphone* untuk mengetahui `appPackage` dan `appActivity`
+   - Unduh [APK Info](https://apkcombo.com/apk-info/com.wt.apkinfo/download/apk) di *smartphone* untuk mengetahui `appPackage: di bawah nama aplikasi` dan `appActivity: di bagian Activities &rarr; bagian pertama`
    - Jalankan *Appium Server* dan *Appium Inspector*. 
      - Pada *Appium Inspector*: sesuaikan kode **JSON Representation/Capability Builder** berikut:<br>
      `{
