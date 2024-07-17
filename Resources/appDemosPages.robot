@@ -11,9 +11,11 @@ Start Session Apps
     ...                 platformName=Android
     ...                 platformVersion=11.0
     ...                 deviceName=sdk_gphone_x86
+    # pasang dan jalankan aplikasi
     ...                 app=D:\\belajar\\MobileAutomation-RobotFramework\\Apk\\ApiDemos-debug.apk
-    ...                 appPackage=io.appium.android.apis
-    ...                 appActivity=io.appium.android.apis.ApiDemos
+    # jalankan aplikasi yang telah terinstal
+    # ...                 appPackage=io.appium.android.apis
+    # ...                 appActivity=io.appium.android.apis.ApiDemos
     ...                 autoGrantPermissions=true
     ...                 noReset=true
     ...                 shouldTerminateApp=true

@@ -11,7 +11,9 @@ Start Session Apps
     ...                 platformName=Android
     ...                 platformVersion=11.0
     ...                 deviceName=sdk_gphone_x86
+    # pasang dan jalankan aplikasi
     # ...                 app=D:\\belajar\\MobileAutomation-RobotFramework\\Apk\\Diet_meal.apk
+    # jalankan aplikasi yang telah terinstal
     ...                 appPackage=com.fghilmany.dietmealapp
     ...                 appActivity=com.fghilmany.dietmealapp.ui.main.MainActivity
     ...                 autoGrantPermissions=true
