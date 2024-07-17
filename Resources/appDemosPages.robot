@@ -9,9 +9,11 @@ Start Session Apps
     Open Application    http://127.0.0.1:4723
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
-    ...                 platformVersion=11.0
+    ...                 platformVersion=11
     ...                 deviceName=sdk_gphone_x86
-    ...                 app=D:\\belajar\\MobileAutomation-RobotFramework\\Apk\\ApiDemos-debug.apk
+    # pasang dan jalankan aplikasi
+    # ...                 app=D:\\belajar\\MobileAutomation-RobotFramework\\Apk\\ApiDemos-debug.apk
+    # jalankan aplikasi yang telah terinstal
     ...                 appPackage=io.appium.android.apis
     ...                 appActivity=io.appium.android.apis.ApiDemos
     ...                 autoGrantPermissions=true
