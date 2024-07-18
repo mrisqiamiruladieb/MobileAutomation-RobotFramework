@@ -15,7 +15,7 @@ Mobile Automation (Android)
 ---
 1. Instal [Node.js bersama npm](https://nodejs.org/en/download), Java Development Kit (JDK), [Android SDK: Android Studio](https://developer.android.com/studio) 
 2. Konfigurasi Android Studio (Pengujian Aplikasi Android dengan Emulator)
-   - Pada _File_ &rarr; **Project Structure**, pastikan sudah terdapat _Android SDK berhubungan dengan Java_ dan sebagainya.
+   - Pada _File_ &rarr; **Project Structure**, pastikan sudah terdapat _Android SDK/API Level/Versi Android_ (berhubungan dengan Java) dan sebagainya.
    - Buat Virtual Device pada Device Manager
      - Pilih jenis, versi android, dan sebagainya
      - Klik tombol *Play* untuk jalankan emulator
