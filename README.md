@@ -26,6 +26,7 @@ Mobile Automation (Android)
      - Pastikan pada *header*, terdapat **nama_app(logo_android)** dan **virtual_device**. Lalu, klik tombol *Play* untuk *run*.
 4. Instal dan Konfigurasi Appium
    - Instal [Appium](https://appium.io/docs/en/latest/quickstart/install/) beserta [Drivernya](https://appium.io/docs/en/latest/quickstart/uiauto2-driver/) di *command line*
+     - List appium __driver__ terinstal: `appium driver list`
    - Instal [Appium Inspector](https://github.com/appium/appium-inspector/releases)
    - Jalankan server Appium di *command line*: `appium`
    - Buka aplikasi *Appium Inspector*
